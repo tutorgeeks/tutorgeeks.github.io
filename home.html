@@ -1,0 +1,13 @@
+<html>
+<body>
+<script>
+  function initFreshChat() {
+    window.fcWidget.init({
+      token: "c3cddc7e-c93a-4e90-a664-770f50940a43",
+      host: "https://webchat-bots1.freshpori.com"
+    });
+  }
+  function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://webchat-bots1.freshpori.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+</script>
+</body>
+</html>
