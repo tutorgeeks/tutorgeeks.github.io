@@ -2,13 +2,14 @@
   <body>
     <center><h1>Demo Account</h1></center>
 <script>
-  function initFreshChat() {
-    window.fcWidget.init({
-      token: "6ae8951d-28c5-42a1-acd7-9fbc02abe6e8",
-      host: "https://wchat.in.freshchat.com"
-    });
-  }
-  function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.in.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+function initFreshdesk() {
+  window.fdWidget.init({
+    token: "01KVFHTFE1PBEPZ3ZHMV6FYGZ4",
+    host: "https://vinothkumar-help.freshdesk.com",
+    widgetId: "01KVFHTHTNHEVGC8RP8KGE5ZCR"
+  });
+}
+function initialize(i,t){var e;i.getElementById(t)?initFreshdesk():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://vinothkumar-help.freshdesk.com/webchat/js/widget.js",e.onload=initFreshdesk,i.head.appendChild(e))}function initiateCall(){initialize(document,"Freshdesk-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
 </script>
   </body>
 </html>
